@@ -65,13 +65,12 @@ function App() {
       <div className="bg bg3"></div>
       <header>
         <h1>Your Todolist</h1>
+        <div className="statusBox">
+          <h3>{todos.length} total</h3>
+          <h3>{todos.filter((todo) => todo.completed).length} completed</h3>
+          <h3>{todos.filter((todo) => !todo.completed).length} open</h3>
+        </div>
       </header>
-      <div className="ball"></div>
-      <div className="statusBox">
-        <h2>You have {todos.length} items in this List</h2>
-        <h3>{todos.filter((todo) => todo.completed).length} completed</h3>
-        <h3>{todos.filter((todo) => !todo.completed).length} open</h3>
-      </div>
       <div className="inputContainer">
         <input onChange={handleInput} value={inputText}></input>
         <button className="addButton" onClick={addTodo}>
