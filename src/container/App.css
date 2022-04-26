@@ -81,6 +81,7 @@ h1 {
   display: flex;
   margin: 0 auto;
   padding-top: 15rem;
+  margin-bottom: 3rem;
 }
 
 input {
