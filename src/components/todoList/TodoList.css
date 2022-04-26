@@ -1,0 +1,63 @@
+.card {
+  background-color: rgba(255, 255, 255, 0.548);
+  max-width: 500px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+}
+.card,
+select,
+button {
+  border-radius: 7px;
+}
+.cardButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.completed {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.trash {
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+}
+
+.tickButton,
+.trashButton {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  height: 50px;
+  width: 3rem;
+  margin: 1rem;
+}
+.tick {
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+}
+
+.tickButton:hover,
+.trashButton:hover {
+  transform: scale(1.1);
+}
+
+.tickButton:active,
+.trashButton:active {
+  transform: scale(0.9);
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.todoTime {
+  font-weight: bold;
+}
