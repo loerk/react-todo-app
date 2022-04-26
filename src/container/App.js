@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState(
-    JSON.parse(localStorage.getItem("todos") || [])
+    JSON.parse(localStorage.getItem("todos")) || []
   );
   const [filter, setFilter] = useState("all");
 
