@@ -6,7 +6,7 @@ function TodoList({ todos, filter, deleteItem, setComplete }) {
     <div>
       {todos
 
-        .sort((a, b) => a.timeInSeconds - b.timeInSeconds)
+        .sort((a, b) => b.timeInSeconds - a.timeInSeconds)
         .filter((todo) => {
           return (
             filter === "all" ||
