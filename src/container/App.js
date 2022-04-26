@@ -21,7 +21,7 @@ function App() {
           minute: "2-digit",
           second: "2-digit",
         }),
-        timeInSeconds: new Date().getMilliseconds(),
+        timeInSeconds: new Date().getTime(),
       },
     ]);
     setInputText("");
